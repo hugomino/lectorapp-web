@@ -2,49 +2,147 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Política de Privacidad - LectorApp</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LectorApp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary: #3478f6;
+      --background: #f9f9f9;
+      --text: #222;
+      --muted: #666;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      text-align: center;
       padding: 40px 20px;
-      max-width: 800px;
-      margin: 0 auto;
-      background-color: #f9f9f9;
-      color: #222;
     }
 
     h1 {
-      font-size: 2rem;
-      margin-bottom: 20px;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-top: 40px;
+      margin-bottom: 10px;
     }
 
     p {
-      margin-bottom: 18px;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 20px auto;
       line-height: 1.6;
     }
 
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px auto;
+      text-align: left;
+      max-width: 500px;
+    }
+
+    ul li {
+      background: white;
+      padding: 12px 18px;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    }
+
+    .button {
+      background-color: var(--primary);
+      color: white;
+      padding: 14px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #265ecf;
+    }
+
     a {
-      color: #3478f6;
+      color: var(--primary);
       text-decoration: none;
     }
 
     a:hover {
       text-decoration: underline;
     }
+
+    .footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .footer a {
+      font-size: 0.85rem;
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 40px auto;
+      max-width: 80%;
+    }
+
+    .logo {
+      width: 300px;
+      max-width: 80%;
+      margin: 0 auto 20px;
+    }
   </style>
 </head>
 <body>
 
-  <h1>Política de Privacidad</h1>
+  <img src="icon.png" alt="LectorApp Logo" class="logo" />
+  <h1>LectorApp</h1>
+  <p>Tu espacio personal para seguir y compartir tus lecturas.</p>
 
-  <p>LectorApp valora tu privacidad. Esta aplicación no recopila datos personales sin tu consentimiento. Toda la información almacenada está vinculada a tu cuenta y se usa exclusivamente para el funcionamiento de la app.</p>
+  <hr />
 
-  <p>No compartimos tus datos con terceros. Puedes solicitar la eliminación de tus datos personales en cualquier momento escribiéndonos a <a href="mailto:contacto@lectorapp.es">contacto@lectorapp.es</a>.</p>
+  <h2>¿Qué es LectorApp?</h2>
+  <p>Con LectorApp puedes registrar tus lecturas, hacer seguimiento de tu progreso y descubrir nuevas lecturas.</p>
 
-  <p>Al utilizar LectorApp, aceptas esta política de privacidad.</p>
+  <h2>Características principales</h2>
+  <ul>
+    <li>Guarda y organiza los libros que estás leyendo.</li>
+    <li>Marca tu progreso y visualiza estadísticas de lectura.</li>
+    <li>Valora y reseña libros tras terminarlos.</li>
+  </ul>
 
-  <p><a href="index.html">Volver al inicio</a></p>
+  <h2>Próximamente disponible en Google Play</h2>
+  <p>Muy pronto podrás descargar LectorApp y comenzar a disfrutar de una nueva forma de leer.</p>
+  <a href="#" class="button">Próximamente en Google Play</a>
+
+  <h2>Contacto</h2>
+  <p>¿Tienes dudas, sugerencias o quieres colaborar?<br>
+     Escríbenos a: <a href="mailto:contacto@lectorapp.es">contacto@lectorapp.es</a>
+  </p>
+
+  <div class="footer">
+    <p>Desarrollado por Hugo M. · LectorApp © 2025</p>
+    <a href="politica.html">Política de privacidad</a>
+  </div>
 
 </body>
 </html>
