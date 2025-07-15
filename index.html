@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LectorApp</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #3478f6;
+      --background: #f9f9f9;
+      --text: #222;
+      --muted: #666;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 20px auto;
+      line-height: 1.6;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px auto;
+      text-align: left;
+      max-width: 500px;
+    }
+
+    ul li {
+      background: white;
+      padding: 12px 18px;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    }
+
+    .button {
+      background-color: var(--primary);
+      color: white;
+      padding: 14px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #265ecf;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .footer a {
+      font-size: 0.85rem;
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 40px auto;
+      max-width: 80%;
+    }
+
+    .logo {
+      width: 75%;
+      max-width: 400px;
+      margin: 0 auto 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="icon.png" alt="LectorApp Logo" class="logo" />
+  <p style="font-size: 1.3rem; font-weight: 600; margin-bottom: 40px;">Tu asistente para engancharte a leer</p>
+
+  <hr />
+
+  <h2>¿Qué es LectorApp?</h2>
+  <p>Con LectorApp puedes registrar tus lecturas, hacer seguimiento de tu progreso y descubrir nuevas lecturas.</p>
+
+  <h2>Características principales</h2>
+  <ul>
+    <li>Guarda y organiza los libros que estás leyendo.</li>
+    <li>Marca tu progreso y visualiza estadísticas de lectura.</li>
+    <li>Valora y reseña libros tras terminarlos.</li>
+  </ul>
+
+  <h2>¡Descarga ya disponible!</h2>
+  <a href="apk/LectorApp.apk" class="button" download>Descargar la app para Android</a>
+  <p style="margin-top: 10px; font-size: 0.95rem; color: var(--muted);">
+    Muy pronto disponible en Google Play y también en iOS.
+  </p>
+
+  <h2>Contacto</h2>
+  <p>¿Tienes dudas, sugerencias o quieres colaborar?<br>
+     Escríbenos a: <a href="mailto:contacto@lectorapp.es">contacto@lectorapp.es</a>
+  </p>
+
+  <div class="footer">
+    <p>Desarrollado por Hugo M. · LectorApp © 2025</p>
+    <a href="politica.html">Política de privacidad</a>
+  </div>
+
+</body>
+</html>
